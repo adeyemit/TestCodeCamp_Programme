@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "d9e75658-5513-47d9-9040-bed0672b8939",
+		"name": "API_Automation_Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all todo entries",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test1: Confirming Test Status Code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"//Test2: Confirming Status Code has right string\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"//Test3: Confirming if it has JSON Body\r",
+							"pm.test(\"Response has a JSON body\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.fusio-project.org/index.php/todo",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"fusio-project",
+						"org"
+					],
+					"path": [
+						"index.php",
+						"todo"
+					]
+				},
+				"description": "https://demo.fusio-project.org/index.php/todo\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Single Todo Data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test1: Confirming Test Status Code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"//Test2: Confirming Status Code has right string\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"//Test3: Confirming if it has JSON Body\r",
+							"pm.test(\"Response has a JSON body\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://demo.fusio-project.org/index.php/todo/?\ntodo_id=2",
+					"protocol": "https",
+					"host": [
+						"demo",
+						"fusio-project",
+						"org"
+					],
+					"path": [
+						"index.php",
+						"todo",
+						""
+					],
+					"query": [
+						{
+							"key": "\ntodo_id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "https://demo.fusio-project.org/index.php/todo/?todo_id=2\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Create a New Record in Database",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test1: To Confirm Successful POST request Status Code\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+							"});\r",
+							"\r",
+							"//Test2: To Confirm Code Has String\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"Created\");\r",
+							"});\r",
+							"\r",
+							"//Test3: Confirming if it has JSON Body\r",
+							"pm.test(\"Response has a JSON body\", function () {\r",
+							"    pm.response.to.be.json;\r",
+							"}); "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/user",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				},
+				"description": "https://reqres.in/api/user"
+			},
+			"response": []
+		},
+		{
+			"name": "Update a User Record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test1: Confirming Test Status Code\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"})\r",
+							"\r",
+							"//Test2: Confirming Status Code has right string\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"OK\");\r",
+							"});\r",
+							"\r",
+							"//Test3: To confirm Content-Type Presence\r",
+							"pm.test(\"Content-Type is present\", function () {\r",
+							"    pm.response.to.have.header(\"Content-Type\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/user/2",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"2"
+					]
+				},
+				"description": "https://reqres.in/api/user/2"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a User Record",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Test1: Confirming No Content Status\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(204);\r",
+							"});\r",
+							"\r",
+							"//Test2: Confirming Response Time\r",
+							"pm.test(\"Response time is above 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.above(200);\r",
+							"});\r",
+							"\r",
+							"//Test3: Confirming Status Code has right string\r",
+							"pm.test(\"Status code name has string\", function () {\r",
+							"    pm.response.to.have.status(\"No Content\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/api/users/2",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"api",
+						"users",
+						"2"
+					]
+				},
+				"description": "https://reqres.in/api/users/2"
+			},
+			"response": []
+		}
+	]
+}
