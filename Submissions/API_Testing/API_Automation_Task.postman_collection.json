@@ -35,12 +35,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://demo.fusio-project.org/index.php/todo",
-					"protocol": "https",
+					"raw": "{{employUrl}}/index.php/todo",
 					"host": [
-						"demo",
-						"fusio-project",
-						"org"
+						"{{employUrl}}"
 					],
 					"path": [
 						"index.php",
@@ -70,7 +67,10 @@
 							"//Test3: Confirming if it has JSON Body\r",
 							"pm.test(\"Response has a JSON body\", function () {\r",
 							"    pm.response.to.be.json;\r",
-							"});"
+							"});\r",
+							"\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -80,12 +80,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://demo.fusio-project.org/index.php/todo/?\ntodo_id=2",
-					"protocol": "https",
+					"raw": "{{employUrl}}/index.php/todo/?\ntodo_id=2",
 					"host": [
-						"demo",
-						"fusio-project",
-						"org"
+						"{{employUrl}}"
 					],
 					"path": [
 						"index.php",
@@ -115,15 +112,17 @@
 							"    pm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
 							"});\r",
 							"\r",
-							"//Test2: To Confirm Code Has String\r",
-							"pm.test(\"Status code name has string\", function () {\r",
-							"    pm.response.to.have.status(\"Created\");\r",
+							"//Test2: To Confirm Body Matches String\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"id\");\r",
 							"});\r",
 							"\r",
 							"//Test3: Confirming if it has JSON Body\r",
 							"pm.test(\"Response has a JSON body\", function () {\r",
 							"    pm.response.to.be.json;\r",
-							"}); "
+							"}); \r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -132,10 +131,14 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"morpheus\",\r\n\"job\":\"leader\"\r\n}"
+				},
 				"url": {
-					"raw": "{{baseURL}}/api/user",
+					"raw": "{{baseUrl}}/api/user",
 					"host": [
-						"{{baseURL}}"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"api",
@@ -176,9 +179,9 @@
 				"method": "PUT",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL}}/api/user/2",
+					"raw": "{{baseUrl}}/api/user/2",
 					"host": [
-						"{{baseURL}}"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"api",
@@ -198,13 +201,13 @@
 					"script": {
 						"exec": [
 							"//Test1: Confirming No Content Status\r",
-							"pm.test(\"Status code is 200\", function () {\r",
+							"pm.test(\"Status code is 204\", function () {\r",
 							"    pm.response.to.have.status(204);\r",
 							"});\r",
 							"\r",
 							"//Test2: Confirming Response Time\r",
-							"pm.test(\"Response time is above 200ms\", function () {\r",
-							"    pm.expect(pm.response.responseTime).to.be.above(200);\r",
+							"pm.test(\"Response time is less than 1000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000);\r",
 							"});\r",
 							"\r",
 							"//Test3: Confirming Status Code has right string\r",
@@ -220,9 +223,9 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{baseURL}}/api/users/2",
+					"raw": "{{baseUrl}}/api/users/2",
 					"host": [
-						"{{baseURL}}"
+						"{{baseUrl}}"
 					],
 					"path": [
 						"api",
