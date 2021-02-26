@@ -1,0 +1,255 @@
+https://www.tutorialspoint.com/software_engineering/index.htm
+
+https://en.wikipedia.org/wiki/Systems_development_life_cycle
+
+https://medium.com/@jilvanpinheiro/software-development-life-cycle-sdlc-phases-40d46afbe384
+
+https://www.techopedia.com/definition/22193/software-development-life-cycle-sdlc
+
+https://www.tutorialspoint.com/sdlc/sdlc_overview.htm
+
+
+http://www.training-specialists.com/SDLC.aspx
+
+
+https://raygun.com/blog/software-development-life-cycle/
+
+
+http://www.base36.com/2012/12/agile-waterfall-methodologies-a-side-by-side-comparison/
+
+https://www.youtube.com/watch?v=cKKxNjNuo94
+
+https://existek.com/blog/sdlc-models/
+
+
+
+What is Database?
+This can be defined as a systematic collection of data which also aid eletronic storage and manipulaton of the data. They make data management easy. Examples are Telephone Director, Facebook, etc.
+
+Types of Database
+Distributed
+Relational
+Object-oriented
+Centralized
+Open Source
+Cloud
+Data Warehouses, network, hierarchical, graph, personal, Multimodal, Document/JSON etc
+
+
+Relational Database Management System (RDBMS)
+This type off database defines database relationship in the form of tables. It is the most popular DBMS type in the market. Examples include MySQL, Oracle, SyBASE and Microsoft SQL Server DB.
+
+The data in RDBMS is stored in database objects called tables which is a collection of related data entries and it consists of columns and rows.
+
+A record also called a row i.e each individual entry that exists in a table.
+
+
+Database Terminologies
+- Primary Key
+- Foreign Key
+
+
+SQL - Standard Query Language is a standard language for accessin and manipulating databases.
+
+SQL Syntax
+- All keywords are not case sensitive.
+- Use TableName or Table_Name NOT Table Name
+- Some database systems require a semicolon at the end of each SQL statement.
+- The last statement doesn't end with a comma due to the overall semicolon that ends the query.
+- No spacing in the syntax while querrying.
+
+SQL Query
+SELECT, WHERE, Logics (OR, AND, NOT), GROUP BY, JOIN
+
+SQL Commands
+We have some which are SQL Insert, Update, Delete, Where, Insert Into, Create Table, Alter Table, Drop Table
+
+SQL Functions
+The Min() and Max() functions return the smallest and largest value of the selected column respectively.
+Sum() - Return the sum.
+
+Count() - Return a count of the number of rows returned.
+
+Avg() - Return the average value of the argument.
+
+SQL JOIN
+A Join Clause is used to combine rows from two or more tables, based  on a related column between them. There are different types namely: 
+- (INNER) JOIN: Which returns records that have matchingg values in both tables.
+- LEFT (OUTER) JOIN: Which returns all records from the left table and the matched records in the right table
+- RIGHT (OUTER) JOIN: This returns all records from the right table and matched records from the left table.
+- FULL (OUTER) JOIN: This returns all records when there is a match in either left or riggght table
+
+https://www.youtube.com/watch?v=bEtnYWuo2Bw
+https://www.youtube.com/watch?v=9Pzj7Aj25lw
+http://www.sqltrainingonline.com/learn-basic-sql-course/
+https://www.tutorialspoint.com/mysql/mysql-introduction.htm
+https://dev.mysql.com/doc/refman/8.0/en/data-types.html
+http://sqlfiddle.com/
+
+CREATE TABLE table_name (column1 int, column2 varchar(255), column3 varchar(255), column4 varchar(255));  
+
+INSERT INTO table_name (column1, column2, column3, column4)
+VALUES (value1, value2, value3, value4); 
+
+
+
+CREATE TABLE Customer (CustomerID int, CustomerName varchar(255), ContactName varchar(255), Address varchar(255), City varchar(255), PostCode int(10), Country varchar(50), Gender Character(12) ); 
+
+INSERT INTO
+Customers (CustomerID, CustomerName, ContactName, Address, City, PostCode, Country, Gender)
+
+VALUES (01, 'Tope Alabi', 'Tope Tbag', 'Quarry Str 37', 'Abeokuta', '234039', 'Nigeria', Male)
+
+
+
+Dummy API Samples
+
+https://demo.fusio-project.org/index.php/todo
+
+https://demo.fusio-project.org/index.php/todo/?todo_id=2
+
+https://reqres.in/api/user
+
+https://reqres.in/api/user/2
+
+https://reqres.in/api/users/2
+
+
+Base url: https://reqres.in/
+https://reqres.in/api/user?page=2
+https://reqres.in/api/users/2 
+
+
+hedobriggs@gmail.com
+
+{
+"name":"morpheus",
+"job":"leader"
+}
+
+
+https://reqres.in/api/login
+{
+"email":"eve.holt@reqres.in",
+"password":"cityslicka"
+}
+
+
+https://www.getpostman.com/collections/bfdc036fbc670f0363af
+
+
+?No one can see me coming
+Do miss it
+If you don't have a head, you cannot get ahead.
+
+"The eagle does not suffer identity crises. It does not roll with other birds, it does not roll with other animals." -Lanre olusola @lanreolusola
+
+#Thinkation2021
+#DareToFly
+
+pirple.com/python
+
+
+
+Material 7
+https://www.selenium.dev/selenium-ide/
+https://chromedriver.chromium.org/downloads
+https://www.jetbrains.com/idea/?_ga=2.194838381.1710866922.1606077134-1143288338.1606077134
+
+https://www.tutorialspoint.com/software_testing_dictionary
+https://www.guru99.com/automation-testing.html
+https://en.wikipedia.org/wiki/Test_automation
+https://testautomationu.applitools.com/setting-a-foundation-for-successful-test-automation/
+
+C:\Users\Teemac\Adeyemi_Tedunjaye_TestClans\TestFile
+
+
+git branch -M master 
+git push -u origin master
+
+change the master to (main)
+http://msdn.microsoft.com/en-us/library/dd286726.aspx
+
+https://www.softwaretestingmaterial.com/types-of-software-testing/
+
+
+Mate 8
+Resources
+https://youtu.be/VagfUINfHnU
+
+List the test suites that should be automated vs those that should not be automated in a google document.
+
+Signup
+Sign in
+Sell
+
+
+https://github.com/macclean/Adeyemi_Tedunjaye_Test-Clans
+https://github.com/adeyemit/Adeyemi_Tedunjaye_Test-Clans
+
+/github subscribe adeyemit
+
+Summary from Material 7: Test Automation
+
+I learnt about Software Test Automation which is
+a software testing technique that can be performed using special automated testing software tools to execute a test case suites.
+
+This not aimed at eliminating manual testing but the goal is to reduce the number of test cases to be run, reduce cost, increase speed of test execution, increase Test coverage, reduce errors as manual testing can be monotonous which are also apparently some of the benefits of automation.
+
+Also learnt about testing that can be automated and it's best practices in order to get maximum ROI of automation. The Test Automation Process i.e steps followed which are *Test Tool Selection, *Definition of Scope of Automation, *Planning, Design and Development, *Test Execution and *Maintenance.
+
+Types of Framework and the differences between Manual Testing and Automation Testing was discussed.
+
+In all, I learnt for an effective software testing process; manual testing cannot be relegated to the background as it must be used pari-passu with automation testing.
+
+
+Summary of Material 8
+
+Learnt and understood what Version Control System (VCS) is all about i.e a system that records or keeps track of changes made to a file or folder by an individual or different individuals in a team over time. The changes made on the files are referred to as versions and one of tools that can tracks such changes is GIT.
+
+Git is a free open source distributed version control system for tracking changes in source code during software development. It's functionality and uses was highlighted.
+
+GitHub can be used to host Git services was explained. Step by step approach from creating an account to working on it and performing some tasks was laid bare.
+
+Through the help of the material, I was was able to Download, Install, Verify Git and runs some commands on my Windows PC e.g creating a repository, cloning the it Github to my PC, editing and adding content.
+
+Finally, configuring my Github account on slack which will allow my teams to track any changes I make on my account or repository. 
+
+https://docs.postman-echo.com
+https://reqres.in/api/register
+{
+    "email": "johndoe@reqres.in",
+    "password": "cream" 
+}
+
+{
+    "email": "eve.holt@reqres.in"
+    "password": "pistol" 
+}
+
+postman.setEnvironmentVariable("header_server", pm.response.headers.get('Server'));
+
+
+Dummy API Samples
+
+https://demo.fusio-project.org/index.php/todo
+
+https://demo.fusio-project.org/index.php/todo/?todo_id=2
+
+https://reqres.in/api/user
+
+https://reqres.in/api/user/2
+
+https://reqres.in/api/users/2
+
+
+Base url: https://reqres.in/
+https://reqres.in/api/user?page=2
+https://reqres.in/api/users/2 
+
+Description: 
+To document API Automation Tasks
+
+https://github.com/adeyemit/TestCodeCamp_Programme.git
+
+ 
