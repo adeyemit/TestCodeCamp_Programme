@@ -35,7 +35,22 @@ public class UserManagementTests {
         }
         Thread.sleep(10000);
 
+
     }
+
+    @Test
+    public void LogoutTest() throws InterruptedException {
+        driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div[2]/div[4]/div[1]/span/div/div[1]/i")).click();
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("/html/body/div[1]/div/div[1]/div/div[2]/div[4]/div[2]/div/div/div[1]/div[1]/div/div/div/div/div/div/div/div/div[1]/div/div[3]/div/div[4]/div/div[1]/div[1]/div/i")).click();
+        if(driver.getCurrentUrl().contains("https://web.facebook.com/")){
+            System.out.println(("PASSED - User Signed Out Successfully"));
+        }else {
+            System.out.println("FAILED - User Still Signed-In");
+        }
+        Thread.sleep(5000);
+    }
+
 
 
     @AfterTest
@@ -45,3 +60,4 @@ public class UserManagementTests {
 
 
 }
+
