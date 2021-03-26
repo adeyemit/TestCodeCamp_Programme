@@ -32,7 +32,7 @@ public class UserManagementTests {
         if(driver.getCurrentUrl().contains("https://web.facebook.com/")){
             System.out.println("PASSED - User Sign-In Successfully");
         }else {
-            System.out.println("FAILED - User Unable to Sign-In Successully");
+            System.out.println("FAILED - User Unable to Sign-In Successfully");
         }
         Thread.sleep(10000);
     }
