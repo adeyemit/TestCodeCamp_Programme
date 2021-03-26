@@ -5,17 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26ebcffb-46a3-4755-b268-6f493c4cc603" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Facebook_Login.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/chromedriver.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/User/UserManagementTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/User/UserManagementTests.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Deydam/src/test/java/User/UserManagementTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Deydam/src/test/java/User/UserManagementTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/User/UserManagementTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/User/UserManagementTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +118,8 @@
       <updated>1615563674582</updated>
       <workItem from="1615563675809" duration="5192000" />
       <workItem from="1615580752167" duration="23000" />
+      <workItem from="1616428383453" duration="2689000" />
+      <workItem from="1616502352166" duration="575000" />
     </task>
     <servers />
   </component>
